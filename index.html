@@ -1,36 +1,84 @@
 <html>
 
+<!--Palette: https://color.adobe.com/create/color-wheel/?base=2&rule=Complementary&selected=2&name=My%20Color%20Theme&mode=rgb&rgbvalues=0.36385449482908877,0.7,0.3887500983010347,0.7197921354701268,1,0.740544886221649,0.6197921354701268,1,0.6479510847544208,0.7,0.29385449482908876,0.4437860157618445,1,0.6197921354701268,0.7601485906660806&swatchOrder=0,1,2,3,4 -->
+
 <head>
 
 	<title>POS Software</title>
 	
 	<style>
-	div {
-		border: 1px solid black;
-		margin: 5px;
-		padding: 5px;
+	
+	body{
+		background-color:#5DB263;
+		font-family:Arial, Helvetica, sans-serif;
+		height:100%;
 	}
 	
+	html, body{
+		height:100%;
+		padding-bottom:0px;
+		padding-top:0px;
+		margin-bottom:0px;
+		margin-top:0px;
+	}
 	.footer{
+		background-color:#FF9EC2;
 		clear:both;
+		margin:0px;
+		margin-top:0px;
+		padding:10px;
 	}
 	
 	.page-container{
-		width:80%;
-		
+		margin: 0 auto;
+		width:80%;		
 	}
 	
 	.module-content{
-		float:right;
-		width:80%;
-	}
-	.module-menu{
-		float:left;
-		width:20%;
+		overflow:hidden;
+		padding:40px;
+		padding-top:10px;
 	}
 	
-	.menu-item {
-		display:inline;
+	.menu-left{
+		background-color:#9EFFA5;
+		float:left;
+		width:15%;
+	}
+
+	.menu-left-header{
+		font-weight:bold;
+		margin:10px;
+	}
+	
+	.menu-left-item{
+		margin:10px;
+	}
+	
+	.menu-top-item {
+		display:inline-block;
+		margin-bottom:10px;
+		margin-left:10px;
+		margin-right:20px;
+		margin-top:10px;
+	}
+	
+	.menu-top {
+		background-color:#FF9EC2;
+	}
+	
+	.page-header{
+		background-color:#9EFFA5;
+	}
+	
+	.page-logo{
+		margin:0px;
+		margin-top:0px;
+		padding:10px;
+	}
+	
+	.page-content{
+		background-color:#B8FFBD;
 	}
 
 	</style>
@@ -41,25 +89,28 @@
 
 <div class="page-container">
 
-<div>
-	<h1>Header Bar</h1>
+<div class="page-header">
+	<h1 class="page-logo">Point-Of-Sale</h1>
 </div>
 
-<div>
-	<div class="menu-item">Menu Bar</div><div class="menu-item">Item</div><div class="menu-item">Item</div><div class="menu-item">Item</div>
+<div class="menu-top">
+	<div class="menu-top-item">Sales</div><div class="menu-top-item">Items and Inventory</div><div class="menu-top-item">Users</div>
 </div>
 
-<div class="module-menu">
-	<div>Module Menu Header</div>
-	<div>Module Menu item</div>
-	<div>Module Menu item</div>
-</div>
+<div class="page-content">
+	<div class="menu-left">
+		<div class="menu-left-header">Sales</div>	
+		<div class="menu-left-item">Make a New Sale</div>
+		<div class="menu-left-item">Make a Return</div>
+		<div class="menu-left-item">View Transaction Reports</div>
+	</div>
 
-<div class="module-content">
-	<h2>Module Name</h2>
-	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	<div class="module-content">
+		<h2>Module Name</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	</div>
 </div>
 
 <div class="footer">
